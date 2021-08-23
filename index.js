@@ -43,7 +43,6 @@ io.on('connection', socket => {
   socket.on("change-board", (board, opponentID ,ismyturn) => {
     io.in(opponentID).emit("changed", board,ismyturn)
   })
-
   socket.on("set-looser",opponentID=>{
     console.log("lose")
     io.in(opponentID).emit("losser")
