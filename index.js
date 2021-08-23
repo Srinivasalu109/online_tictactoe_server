@@ -6,7 +6,7 @@ var io = require('socket.io')(http, {
     origin: '*',
   }
 });
-const { createRoom, joinRoom,removeRoom } = require("./handlers")
+const { createRoom, joinRoom,removeRoom } = require("./handlers/handlers")
 // const { v4: uuidv4 } = require('uuid');
 const PORT =process.env.PORT||4000
 io.on('connection', socket => {
