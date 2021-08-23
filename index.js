@@ -60,7 +60,8 @@ io.on('connection', socket => {
     io.in(leftId).emit("oppenetLeft")
     console.log("dis",socket.id)
   })
-})
+})     
+
 http.listen(PORT, () => {
   console.log('listening on *:4000');
 })
